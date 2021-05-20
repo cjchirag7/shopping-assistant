@@ -1,2 +1,7 @@
 services/api/__pycache__
 services/web-app/node_modules
+services/api/Try-On/__pycache__
+services/api/Try-On/gmm_final.pth
+services/api/Try-On/pose_iter_440000.caffemodel
+services/api/Try-On/tom_final.pth
+services/api/Try-On/exp-schp-201908261155-lip.pth
