@@ -8,6 +8,20 @@ verify_ssl = true
 [packages]
 fastapi = "*"
 uvicorn = {extras = ["standard"],version = "*"}
+dlib = "*"
+dotmap = "*"
+face-recognition = "*"
+face-recognition-models = "*"
+numpy = "*"
+opencv-python = "*"
+pillow = "*"
+tqdm = "*"
+wincertstore = "*"
+imutils = "*"
+requests = "*"
+torchvision = "*"
+aiofiles = "*"
+python-multipart = "*"
 
 [requires]
 python_version = "3.6"

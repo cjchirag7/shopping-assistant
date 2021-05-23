@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import {  Widget,  addResponseMessage } from "react-chat-widget";
+import {  Widget,  addResponseMessage,setQuickButtons, addUserMessage,renderCustomComponent, addLinkSnippet } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 import logo from "../../Images/avatar.jpeg";
+import SunglassesPreview from "../SunglassesPreview";
 
 class Chat extends Component {
 
@@ -17,6 +18,19 @@ class Chat extends Component {
     const req = {
       msg: text
     };   
+    // return renderCustomComponent(SunglassesPreview,null);
+    return setQuickButtons([{
+      label: 'Polaris',
+      value: 'Polaris'
+    },
+    {
+      label: 'Sonata',
+      value: 'Sonata'
+    },
+    {
+      label: 'Rolex',
+      value: 'Rolex'
+    }])
     return addResponseMessage('Hello! Hope you are staying safe'); 
     //  return fetch(`${process.env.REACT_APP_CHATBOT_SERVER}/bot`, {
     //   method: "POST",
@@ -61,6 +75,11 @@ class Chat extends Component {
           title="Shopping Assistant"
           subtitle="Ask anything related to online shopping"
           badge
+          handleQuickButtonClicked={
+            (value) => {
+              addUserMessage(value);
+            }
+          }
         />
       </div>
     );
