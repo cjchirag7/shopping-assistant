@@ -122,7 +122,7 @@ const clothImages = [
     thumbnail: 'http://localhost:8000/Database/val/cloth/002337_1.jpg',
     thumbnailWidth: 192,
     thumbnailHeight: 256,
-    caption: "White Short Sleeve Swan Print Bodycon Dress",
+    caption: "Short Sleeve Swan Print Bodycon Dress",
     price: "₹23,999.00 INR"
   },     
   {
@@ -142,7 +142,7 @@ const clothImages = [
     thumbnailHeight: 256,
     caption: "Lucky Brand Womens Paisley Short Sleeve Crew T-shirt",
     price: "₹73,999.00 INR"
-  },           
+  },
   {
     productId: '003086',
     src: 'http://localhost:8000/Database/val/cloth/003086_1.jpg',
@@ -150,7 +150,7 @@ const clothImages = [
     thumbnailWidth: 192,
     thumbnailHeight: 256,
     caption: "Kidsville thunderbolt print T-shirt",
-    price: "₹1,999.00 INR"
+    price: "₹999.00 INR"
   },           
   {
     productId: '006158',

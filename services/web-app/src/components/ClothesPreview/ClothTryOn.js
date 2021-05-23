@@ -5,12 +5,20 @@ import Sidebar from "./Sidebar";
 import Navbar from "../Navbar";
 import ClothTryOnUITour from "./UITour";
 import SelectClothDialog from "./SelectClothDialog";
+import ClothImages from "../../Constants/ClothImages"
 
 const ClothTryOn = (props) => {
-  const { classes, theme, pathname } = props;
+  const { classes, theme, pathname, productId } = props;
   const [open, setOpen] = useState(pathname === "/try/cloth/");
   const [isSelectClothDialogOpen, setSelectClothDialogOpen] = useState(false);
   const [userId, setUserId] = useState('');
+
+  useEffect(() => {
+    const matchedProduct = ClothImages.filter((product) => product.productId === productId);
+    if(!matchedProduct.length)
+      return;
+    setSelectedProduct(matchedProduct[0]);
+  },[])
 
   useEffect(() => {
     console.log(pathname);

@@ -50,7 +50,7 @@
 }
 
 .rcw-widget-container {
-  max-width: 25vw !important;
+  max-width: 30vw !important;
 }
 
 .rcw-launcher {
@@ -64,6 +64,10 @@
 .rcw-client .rcw-message-text {
   background-color: #2c387e !important;
   color: white; 
+}
+
+.rcw-messages-container {
+  height: 59vh !important;
 }
 
 ::-webkit-scrollbar {

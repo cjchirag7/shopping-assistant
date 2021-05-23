@@ -2,6 +2,7 @@ from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, UploadFile, File
 from tryOnApp import virtual_tryon
+from chatbot import get_response
 from fastapi.staticfiles import StaticFiles
 import time
 import numpy as np
@@ -51,3 +52,8 @@ async def upload_image(user_id: str, image: Optional[UploadFile] = File(None)):
 def get_virtual_try_image(item_id: str, user_id: str):
     result_url=serverURL+virtual_tryon(user_id,'./Database/val/person/'+user_id+'.jpg',item_id)
     return {"result_url": result_url}
+
+@app.get("/ask")
+def get_virtual_try_image(question: str):
+    response = get_response(question)
+    return {"response": response}

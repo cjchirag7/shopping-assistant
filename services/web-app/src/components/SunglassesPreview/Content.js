@@ -4,9 +4,10 @@ import { JEELIZVTO, JEELIZVTOWIDGET } from 'jeelizvtowidget'
 import Button from '@material-ui/core/Button';
 import searchImage from '../../Images/avatar.jpeg'
 import MuiAlert from '@material-ui/lab/Alert';
+import LinearProgress from '@material-ui/core/LinearProgress';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
-function init_VTOWidget(placeHolder, canvas, toggleLoading){
+function init_VTOWidget(placeHolder, canvas, toggleLoading, onLoad){
   JEELIZVTOWIDGET.start({
     placeHolder,
     canvas,
@@ -21,7 +22,7 @@ function init_VTOWidget(placeHolder, canvas, toggleLoading){
     searchImageColor: 0xeeeeee, // color of loading (face not found) animation
     searchImageRotationSpeed: -0.001, // negative -> clockwise
     callbackReady: function(){
-      console.log('INFO: JEELIZVTOWIDGET is ready :)');
+     onLoad(); 
     },
     onError: function(errorLabel){ // this function catches errors, so you can display custom integrated messages
       alert('An error happened. errorLabel =' + errorLabel)
@@ -54,11 +55,15 @@ function Content(props){
   const { selectedSunglasses } = props;
   const refPlaceHolder = useRef();
   const refCanvas = useRef();
-  const refLoading = useRef();
   const [adjustMode, setAdjustMode] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const toggleLoading = (isLoadingVisible) => {
-    refLoading.current.style.display = (isLoadingVisible) ? 'block' : 'none';
+  const toggleLoading = () => {
+    console.log('Ready for trying sunglasses')
+  }
+
+  const onLoad = () => {
+    setIsLoading(false);
   }
 
   const enter_adjustMode = () => {
@@ -78,7 +83,7 @@ function Content(props){
   useEffect(() => {
     const placeHolder = refPlaceHolder.current;
     const canvas = refCanvas.current;
-    init_VTOWidget(placeHolder, canvas, toggleLoading);
+    init_VTOWidget(placeHolder, canvas, toggleLoading, onLoad);
 
     return () => {
       JEELIZVTOWIDGET.destroy();
@@ -86,10 +91,11 @@ function Content(props){
   }, []);
 
   useEffect(() => {
-    if(!selectedSunglasses)
+    if(!selectedSunglasses || isLoading)
       return;
     set_glassesModel(selectedSunglasses);
-  },[selectedSunglasses]);
+  },[selectedSunglasses, isLoading]);
+
 
   return (
     <div>
@@ -100,10 +106,7 @@ function Content(props){
         </div>}      
     <div ref={refPlaceHolder} className='JeelizVTOWidget' style={adjustMode?({ marginTop: '3vh'}):({marginTop: '20vh'})}>      
       <canvas ref={refCanvas} className='JeelizVTOWidgetCanvas'></canvas>      
-      <div ref={refLoading} className='JeelizVTOWidgetLoading'>
-       <div className='JeelizVTOWidgetLoadingText'>
-        </div>
-      </div>
+      { isLoading && <LinearProgress />}
     </div>
     {selectedSunglasses && !adjustMode && <div style={{textAlign: 'center'}}>
       <br/>

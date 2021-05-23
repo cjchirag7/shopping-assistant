@@ -6,7 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Chat from './components/chatbot/Chat';
+import Home from './components/Home';
 import SunglassesPreview from './components/SunglassesPreview';
 import ClothesPreview from './components/ClothesPreview';
 
@@ -21,7 +21,7 @@ function App() {
        <SunglassesPreview/>
      </Route>       
      <Route path="/">
-       <Chat/>
+       <Home/>
      </Route>
      </Switch>
     </Router>   

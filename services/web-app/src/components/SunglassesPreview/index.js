@@ -99,7 +99,8 @@ function ClothesPreview() {
       },
     },
   });
-  const { pathname } = useLocation();  
+  const { pathname, search } = useLocation();  
+  const productCode=new URLSearchParams(search).get('product_code')  
   const classes = useStyles();
 
   return (
@@ -107,7 +108,7 @@ function ClothesPreview() {
     <div className={classes.root}>
       <CssBaseline />
     </div>
-    <SunglassesTryOn classes={classes} theme={theme} pathname={pathname}/>
+    <SunglassesTryOn classes={classes} theme={theme} pathname={pathname} productCode={productCode}/>
   </MuiThemeProvider>    
   );
 }

@@ -22,6 +22,9 @@ requests = "*"
 torchvision = "*"
 aiofiles = "*"
 python-multipart = "*"
+nltk = "*"
+pandas = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.6"
