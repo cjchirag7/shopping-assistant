@@ -1,14 +1,30 @@
 import React from 'react';
 import './App.css';
-import Chat from './components/chatbot/Chat';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './components/Home';
+import SunglassesPreview from './components/SunglassesPreview';
+import ClothesPreview from './components/ClothesPreview';
 
 function App() {
   return (
-    <div>
-      <br/>
-      <br/>
-      <Chat/>
-    </div>      
+    <Router>
+     <Switch>
+     <Route path="/try/cloth">
+       <ClothesPreview/>
+     </Route>              
+     <Route path="/try/sunglasses">
+       <SunglassesPreview/>
+     </Route>       
+     <Route path="/">
+       <Home/>
+     </Route>
+     </Switch>
+    </Router>   
   );
 }
 

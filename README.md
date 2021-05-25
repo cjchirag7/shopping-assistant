@@ -26,7 +26,7 @@ pipenv shell
 2. In the activated virtual environment, run the following command to install all the dependencies:
 
 ```
-pipenv install -r requirements.txt
+pipenv install
 ```
 
 3. In the activated virtual environment, run the following command to run the API:

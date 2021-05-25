@@ -1,0 +1,453 @@
+[
+  {
+    "question":"Please suggest sunglasses.",
+    "type":"suggestion",
+    "product":"sunglasses"
+  },
+  {
+    "question":"Show me shades of RayBan",
+    "type":"specific-suggestion",
+    "product":"sunglasses",
+    "payload":
+    [
+      {
+        "img":"https://productimagesglassesdb.jeeliz.com/_custom_rayban_wayfarer_havane_vert.jpg",
+        "title":"Ray-Ban Original Wayfarer Sunglasses",
+        "code":"rayban_wayfarer_havane_vert",
+        "price":"₹12,164.00 INR",
+        "link":"https://www.amazon.in/Rayban-Wayfarer-sunglasses-polarzied-RB2140/dp/B002Q1P12S"
+      },
+      {
+        "img":"data:image/jpeg;base64,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",
+        "title":"Ray-Ban Aviator Doug N01",
+        "code":"mykita_black",
+        "price":"₹36,399.00 INR",
+        "link":"https://www.amazon.in/Sunglasses-Ray-Ban-Spectacle-Frames/s?rh=n%3A1968036031%2Cp_89%3ARay-Ban"
+      }
+    ]
+  },
+  {
+    "question":"Suggest shades.",
+    "type":"suggestion",
+    "product":"sunglasses"
+  },
+  {
+    "question":"Suggest shirts, tops.",
+    "type":"suggestion",
+    "product":"cloth"
+  },  
+  {
+    "question":"Please tell me how these sunglasses / glasses / shades would look on me",
+    "type":"link",
+    "payload":
+    {
+      "link":"http://localhost:3000/try/sunglasses",
+      "title":"Virtual try-on : Try out dresses, sunglasses etc. virtually",
+      "target":"_blank"
+    }
+  },
+  {
+    "question":"Can you show how this shirt, top will look on me",
+    "type":"link",
+    "payload":
+    {
+      "link":"http://localhost:3000/try/cloth",
+      "title":"Virtual try-on : Try out dresses, sunglasses etc. virtually",
+      "target":"_blank"
+    }
+  },
+  {
+    "question":"I want to see how this dress would look on me. ",
+    "type":"link",
+    "payload":
+    {
+      "link":"http://localhost:3000/try/cloth",
+      "title":"Virtual try-on : Try out dresses, sunglasses etc. virtually",
+      "target":"_blank"
+    }
+  },    
+  {
+    "question":"Please share how I can try these glasses virtually",
+    "type":"link",
+    "payload":
+    {
+      "link":"http://localhost:3000/try/sunglasses",
+      "title":"Virtual try-on : Try out dresses, sunglasses etc. virtually",
+      "target":"_blank"
+    }
+  },      
+  {
+    "question":"Please share how I can try these clothes virtually",
+    "type":"link",
+    "payload":
+    {
+      "link":"http://localhost:3000/try/cloth",
+      "title":"Virtual try-on : Try out dresses, sunglasses etc. virtually",
+      "target":"_blank"
+    }
+  },        
+  {
+    "question":"Can you suggest red polo t-shirts / shirt",
+    "type":"specific-suggestion",
+    "product":"cloth",
+    "payload":
+    [
+      {
+        "productId":"001247",
+        "src":"http://localhost:8000/Database/val/cloth/001247_1.jpg",
+        "thumbnail":"http://localhost:8000/Database/val/cloth/001247_1.jpg",
+        "thumbnailWidth":192,
+        "thumbnailHeight":256,
+        "caption":"B&C Womens Inspire Polo Shirt",
+        "price":"₹10,559.00 INR",
+        "link":"https://www.amazon.com/Womens-Ladies-Inspire-Polo/dp/B07BKMSJKM"
+      }
+    ]
+  },
+  {
+    "question":"Tell me something about yourself",
+    "type":"text",
+    "payload":"I am your shopping assistant. You can ask me anything related to any product"
+  },
+  {
+    "question":"Who are you What is your name",
+    "type":"text",
+    "payload":"I am your shopping assistant. You can ask me anything related to any product"
+  },
+  {
+    "question":"Bye See you later",
+    "type":"text",
+    "payload":"Have a nice time!"    
+  },
+  {
+    "question":"Thank you so much for helping me.",
+    "type":"text",
+    "payload":"It's my pleasure."    
+  },
+  {
+    "question":"I am grateful to you for helping me.",
+    "type":"text",
+    "payload":"It's my pleasure."    
+  },
+  {
+    "question":"Show me shades under 10k INR",
+    "type":"specific-suggestion",
+    "product":"sunglasses",
+    "payload":
+    [
+      {
+        "img": "https://media.visio-net.com/oscommerce/images/viewerxxl/carrera-CARRERA114S-D6KP9-55_1/carrera-CARRERA114S-D6KP9-55_1_1.jpg",
+        "title": "Carrera 114/S Blue Grey D6K P9",
+        "code": "carrera_114S_blue_gray",
+        "price": "₹7,904.00 INR"
+      },
+      {
+        "img": "https://cdn.eyerim.com/media/catalog/product/cache/shared/image/600x/9df78eab33525d08d6e5fb8d27136e95/s/o/soak-g005906-m042451-bi-1.jpg",
+        "title": "Oakley Latch Havana Green 9265",
+        "code": "latch_havana_green",
+        "price": "₹6,877.00 INR"
+      },
+      {
+        "img": "data:image/jpeg;base64,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",
+        "title": "Steampunk (Gold & Blue)",
+        "code": "aliexpress_steampunk_gold_blue_mirror",
+        "price": "₹1,436.00 INR"
+      }
+    ]
+  },
+  {
+    "question":"Show me shades under 10,000 INR",
+    "type":"specific-suggestion",
+    "product":"sunglasses",
+    "payload":
+    [
+      {
+        "img": "https://media.visio-net.com/oscommerce/images/viewerxxl/carrera-CARRERA114S-D6KP9-55_1/carrera-CARRERA114S-D6KP9-55_1_1.jpg",
+        "title": "Carrera 114/S Blue Grey D6K P9",
+        "code": "carrera_114S_blue_gray",
+        "price": "₹7,904.00 INR"
+      },
+      {
+        "img": "https://cdn.eyerim.com/media/catalog/product/cache/shared/image/600x/9df78eab33525d08d6e5fb8d27136e95/s/o/soak-g005906-m042451-bi-1.jpg",
+        "title": "Oakley Latch Havana Green 9265",
+        "code": "latch_havana_green",
+        "price": "₹6,877.00 INR"
+      },
+      {
+        "img": "data:image/jpeg;base64,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",
+        "title": "Steampunk (Gold & Blue)",
+        "code": "aliexpress_steampunk_gold_blue_mirror",
+        "price": "₹1,436.00 INR"
+      }
+    ]
+  },  
+  {
+    "question":"suggest high priced sunglasses between 20k and 30k INR",
+    "type":"specific-suggestion",
+    "product":"sunglasses",
+    "payload":
+    [
+      {
+        "img": "data:image/jpeg;base64,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",
+        "title": "Ray-Ban Aviator Doug N01",
+        "code": "mykita_black",
+        "price": "₹36,399.00 INR"
+      }                           
+    ]   
+  },
+  {
+    "question":"suggest high priced sunglasses between 20,000 and 30,000 INR",
+    "type":"specific-suggestion",
+    "product":"sunglasses",
+    "payload":
+    [
+      {
+        "img": "data:image/jpeg;base64,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",
+        "title": "Ray-Ban Aviator Doug N01",
+        "code": "mykita_black",
+        "price": "₹36,399.00 INR"
+      }                           
+    ]   
+  },
+  {
+    "question":"Can you show tops under 1k INR?",
+    "type":"specific-suggestion",
+    "product":"cloth",
+    "payload":
+    [
+      {
+        "productId": "003086",
+        "src": "http://localhost:8000/Database/val/cloth/003086_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/003086_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Kidsville thunderbolt print T-shirt",
+        "price": "₹999.00 INR"
+      },           
+      {
+        "productId": "000308",
+        "src": "http://localhost:8000/Database/val/cloth/000308_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/000308_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Graphics print crew-neck T-Shirt",
+        "price": "₹559.00 INR"        
+      }      
+    ]
+  },
+  {
+    "question":"Can you show tops, shirts under 1,000 INR?",
+    "type":"specific-suggestion",
+    "product":"cloth",
+    "payload":
+    [
+      {
+        "productId": "003086",
+        "src": "http://localhost:8000/Database/val/cloth/003086_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/003086_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Kidsville thunderbolt print T-shirt",
+        "price": "₹999.00 INR"
+      },           
+      {
+        "productId": "000308",
+        "src": "http://localhost:8000/Database/val/cloth/000308_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/000308_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Graphics print crew-neck T-Shirt",
+        "price": "₹559.00 INR"        
+      }      
+    ]
+  },   
+  {
+    "question":"Show printed T-Shirts, tops",
+    "type":"specific-suggestion",
+    "product":"cloth",
+    "payload":
+    [
+      {
+        "productId": "000308",
+        "src": "http://localhost:8000/Database/val/cloth/000308_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/000308_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Graphics print crew-neck T-Shirt",
+        "price": "₹559.00 INR"        
+      },
+      {
+        "productId": "002337",
+        "src": "http://localhost:8000/Database/val/cloth/002337_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/002337_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Short Sleeve Swan Print Bodycon Dress",
+        "price": "₹23,999.00 INR"
+      },
+      {
+        "productId": "001401",
+        "src": "http://localhost:8000/Database/val/cloth/001401_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/001401_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Logo crew-kneck T-Shirt",
+        "price": "₹20,559.00 INR"
+      }
+    ]
+  },
+  {
+    "question":"Show sleeveless tops",
+    "type":"specific-suggestion",
+    "product":"cloth",
+    "payload":
+    [
+      {
+        "productId":"001719",
+        "src":"http://localhost:8000/Database/val/cloth/001719_1.jpg",
+        "thumbnail":"http://localhost:8000/Database/val/cloth/001719_1.jpg",
+        "thumbnailWidth":192,
+        "thumbnailHeight":256,
+        "caption":"Cheffon sleeveless Top",
+        "price":"₹74,499.00 INR"
+      },
+      {
+        "productId":"000649",
+        "src":"http://localhost:8000/Database/val/cloth/000649_1.jpg",
+        "thumbnail":"http://localhost:8000/Database/val/cloth/000649_1.jpg",
+        "thumbnailWidth":192,
+        "thumbnailHeight":256,
+        "caption":"Cami sleeveless Top",
+        "price":"₹15,999.00 INR"
+      },
+      {
+        "productId":"002061",
+        "src":"http://localhost:8000/Database/val/cloth/002061_1.jpg",
+        "thumbnail":"http://localhost:8000/Database/val/cloth/002061_1.jpg",
+        "thumbnailWidth":192,
+        "thumbnailHeight":256,
+        "caption":"Tommy Hilfiger Ruffle Top",
+        "price":"₹14,499.00 INR"
+      }
+    ]
+  },
+  {
+    "question":"Suggest dark coloured tops, shirts",
+    "type":"specific-suggestion",
+    "product":"cloth",
+    "payload":
+    [
+      {
+        "productId":"000649",
+        "src":"http://localhost:8000/Database/val/cloth/000649_1.jpg",
+        "thumbnail":"http://localhost:8000/Database/val/cloth/000649_1.jpg",
+        "thumbnailWidth":192,
+        "thumbnailHeight":256,
+        "caption":"Cami sleeveless Top",
+        "price":"₹15,999.00 INR"
+      },
+      {
+        "productId": "000003",
+        "src": "http://localhost:8000/Database/val/cloth/000003_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/000003_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Summer Ruffle T-Shirt",
+        "price": "₹10,029.86 INR"  
+      },
+      {
+        "productId": "000013",
+        "src": "http://localhost:8000/Database/val/cloth/000013_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/000013_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Lenny silk short-sleeve Top",
+        "price": "₹22,704.00 INR"        
+      }
+    ]
+  },
+  {
+    "question":"Suggest long sleeved tops",
+    "type":"specific-suggestion",
+    "product":"cloth",
+    "payload":
+    [
+      {
+        "productId": "006158",
+        "src": "http://localhost:8000/Database/val/cloth/006158_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/006158_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Women's Clearance Long Sleeve Tops",
+        "price": "₹1,399.00 INR"
+      },
+      {
+        "productId": "000627",
+        "src": "http://localhost:8000/Database/val/cloth/000627_1.jpg",
+        "thumbnail": "http://localhost:8000/Database/val/cloth/000627_1.jpg",
+        "thumbnailWidth": 192,
+        "thumbnailHeight": 256,
+        "caption": "Women's Designer Sweatshirt",
+        "price": "₹25,359.00 INR"        
+      }              
+    ]
+  },  
+  {
+    "question":"I want to buy a mobile phone under 12k with a good camera",
+    "type":"specific-suggestion",
+    "product":"phone",
+    "payload":
+    [
+      {
+        "src": "https://www.topmobilesindia.com/wp-content/uploads/2019/11/OPPO-A5-2020.jpg",
+        "caption": "OPPO A5 2020",
+        "price": "₹11,490.00 INR",
+        "link": "https://www.amazon.in/Mirror-Storage-Additional-Exchange-Offers/dp/B07S8D1T2L/ref=as_li_ss_tl?s=electronics&ie=UTF8&qid=1569051036&sr=1-1&th=1&linkCode=sl1&tag=searchmymob06-21&linkId=e00097b0725aa9d4bda9f557012d0d7f&language=en_IN"
+      },
+      {
+        "src": "https://static.digit.in/product/thumb_175512_product_td_300.jpeg",
+        "caption": "REDMI 9 POWER 64GB",
+        "price": "₹10,000.00 INR",
+        "link": "https://www.amazon.in/dp/B089MS8XQ3?tag=mobiletop10pldes-21"
+      },
+      {
+        "src": "https://static.digit.in/product/thumb_169577_product_td_300.jpeg",
+        "caption": "REALME NARZO 20",
+        "price": "₹9,499.00 INR",
+        "link": "https://www.flipkart.com/realme-narzo-20-glory-silver-64-gb/p/itm4ac58d879006d?pid=MOBFVEATBBRGJBKH&affid=OR9Dot9&affExtParam1=desktop_mapped_table&affExtParam2=top_10"
+      }      
+    ]
+  }, 
+  {
+    "question":"Suggest wireless headphone under 10k with noise cancellation",
+    "type":"specific-suggestion",
+    "product":"headphone",
+    "payload":
+    [
+      {
+        "src": "https://img.tatacliq.com/images/i6/437Wx649H/MP000000007743933_437Wx649H_20200917162418.jpeg",
+        "caption": "Amigo Legend 200 Wireless",
+        "price": "₹1,299.00 INR",
+        "link": "https://www.tatacliq.com/amigo-legend-200-wireless-headphone-with-microphone-blue/p-mp000000007743933"
+      },
+      {
+        "src": "https://i.gadgets360cdn.com/products/headphones-and-headsets/large/boat-rockerz-400-wireless-headphone-832X558-1598367902.jpg",
+        "caption": "boAt Rockerz 400 Wireless",
+        "price": "₹1,499.00 INR",
+        "link": "https://gadgets.ndtv.com/boat-rockerz-400-wireless-headphones-price-in-india-84825"
+      }      
+    ]
+  },
+  {
+    "question":"Suggest more",
+    "type":"requesting-more"
+  },
+  {
+    "question":"Show more such",
+    "type":"requesting-more"
+  },
+  {
+    "question":"more",
+    "type":"requesting-more"
+  }  
+]
