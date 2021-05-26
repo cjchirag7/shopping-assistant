@@ -8,7 +8,7 @@ import SpeakerNotesIcon from '@material-ui/icons/SpeakerNotes';
 import ReplayIcon from '@material-ui/icons/Replay';
 
 function Home(props) {
-  return <div style={{justifyContent:'center',textAlign: 'center', backgroundColor:'#ffcf33', minHeight: '100vh'}}>
+  return <div style={{justifyContent:'center',textAlign: 'center', backgroundColor:'#33bfff', minHeight: '100vh'}}>
 <br/>
 <Typography variant="h4" component="h2">
   Shopping Assistant

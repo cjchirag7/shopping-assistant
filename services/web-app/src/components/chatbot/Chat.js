@@ -55,7 +55,11 @@ class Chat extends Component {
           }
           else if(response.type === "text") {
             addResponseMessage(response.payload);
-          } else if(response.type === "link") {
+          }
+          else if(response.type === "summary") {
+            addResponseMessage(response.summary);
+          }
+          else if(response.type === "link") {
             addLinkSnippet(response.payload)
           } else if(response.type === "specific-suggestion"
            || response.type==="suggestion"
@@ -66,7 +70,7 @@ class Chat extends Component {
               response.payload=[];
               if(response.type==="requesting-more") {
                 response.product = recentProduct;
-              }
+                console.log(recentProduct);
               if(response.product==="sunglasses") {
               ([0,1,2]).forEach((num) => {
                 const len=sunglassesData.length;
@@ -81,6 +85,21 @@ class Chat extends Component {
               this.setState({clothIndex: clothIndex+3});
             } else {
               addResponseMessage('Sorry, I have shown you all the available products.');        
+            }
+            }
+            else if(response.type==="suggestion") {
+              if(response.product==="sunglasses") {
+                response.payload=sunglassesData.filter(
+                  (glasses) => response.preferred.some(
+                    (preferred_code)=>preferred_code===glasses.code)
+                  );
+              }
+              else {
+                response.payload=clothImages.filter(
+                  (cloth) => response.preferred.some(
+                    (preferred_id)=>preferred_id===cloth.productId)
+                  );
+              }
             }
             }
             if(response.payload.length === 1) {
@@ -106,9 +125,9 @@ class Chat extends Component {
               props.width='150px';
               props.trialLink=`/try/cloth?product_id=${props.productId}`;
             }
-            this.setState({recentProduct: response.product});
             renderCustomComponent(ProductCard,props);
           }) 
+          this.setState({recentProduct: response.product});          
           } 
           return;
       })
