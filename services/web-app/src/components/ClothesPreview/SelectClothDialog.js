@@ -62,7 +62,12 @@ return (<Dialog
           </Toolbar>
         </AppBar>
         <div style={{padding: "5px"}}>
-          <Gallery images={ClothImages} onSelectImage={onSelectImage} />
+          <Gallery 
+            images={ClothImages}
+            onSelectImage={onSelectImage}
+            onClickThumbnail={onSelectImage}
+            enableLightbox={false}
+          />
         </div>
       </Dialog>);
 }

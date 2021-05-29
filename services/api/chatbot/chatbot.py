@@ -13,8 +13,14 @@ import pandas as pd
 from recommender.sunglasses_recommendor import recommend_sunglasses
 from recommender.clothes_recommendor import recommend_cloth
 
+def download_ntlk_stopwords():
+    try:
+        nltk.data.find('corpora/stopwords')
+    except LookupError:
+        nltk.download('stopwords')
+
 nltk.download('punkt') 
-nltk.download('stopwords')
+download_ntlk_stopwords()
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet') 
 nltk.download('nps_chat')
