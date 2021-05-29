@@ -38,11 +38,15 @@ git clone https://github.com/cjchirag7/shopping-assistant
    [docs](https://docs.docker.com/get-docker/)
 2. Install `Docker Compose` by looking up the
    [docs](https://docs.docker.com/compose/install/)
+```
+Note: If you are using Windows, make sure Docker Desktop is running.
+```
+
 ### Steps
 
 1. Make sure you are in the root of the project (i.e., `./shopping-assistant/`
    folder).
-2. Run `docker-compose up` to spin up the containers.
+2. Run `docker-compose up` to spin up the containers. If you are using Linux or Mac, you may need to use `sudo` for this command to work. 
 3. `web-app` would then be available locally at http://localhost:3000 , `server`
    at http://localhost:8000 and the `API documentation` would be available at http://localhost:8000/redoc
 
