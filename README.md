@@ -107,8 +107,17 @@ npm start
 - TODO
 ## Screenshots
 
-- TODO
-
+![Home Page](./screenshots/ss-1.png)
+![Asking for printed shirts](./screenshots/ss-2.gif)
+![Asking for printed shirts in other words](./screenshots/ss-3.gif)
+![Asking for virtual trial](./screenshots/ss-4.png)
+![Virtual trial step 1](./screenshots/ss-5.png)
+![Virtual trial step 2](./screenshots/ss-6.png)
+![Selecting a dress](./screenshots/ss-7.png)
+![Virtual trial step 3](./screenshots/ss-8.png)
+![Another example of virtual trial](./screenshots/ss-9.png)
+![Asking for a mobile phone with specific properties](./screenshots/ss-10.gif)
+![Summary of reviews](./screenshots/ss-11.png)
 ## Tech Stack
 
 ### Server
@@ -127,6 +136,7 @@ npm start
 ## File structure
 
 - Presentation has been attached as `presentation.pptx` [TODO]
+- Screenshots have been attached in `screenshots/`
 - Training files have been attached as `training-files/`
 - Server code has been attached in `services/api/`
 - Frontend code has been attached in `services/web-app/`
