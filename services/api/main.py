@@ -2,7 +2,7 @@ from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, UploadFile, File
 from tryOnApp import virtual_tryon
-from chatbot import get_response
+from chatbot.chatbot import get_response
 from fastapi.staticfiles import StaticFiles
 import time
 import numpy as np
@@ -54,6 +54,6 @@ def get_virtual_try_image(item_id: str, user_id: str):
     return {"result_url": result_url}
 
 @app.get("/ask")
-def get_virtual_try_image(question: str):
+def get_chatbot_response(question: str):
     response = get_response(question)
     return {"response": response}

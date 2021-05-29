@@ -1,14 +1,53 @@
 # Shopping Assistant
+
+## Index
+- **[About](#about)**
+- **[Features](#features)**
+- **[Instructions for running locally](#Instructions-for-running-locally)**
+   - **[Initial steps](#initial-steps)**
+   - **[Method I (Using docker) [Recommended]](#method-i-using-docker-recommended)**
+   - **[Method II (Without docker)](#method-ii-without-docker)**
+- **[Demo video](#demo-video)**
+- **[Screenshots](#screenshots)**
+- **[Tech Stack](#tech-stack)**   
+- **[File Structure](#file-structure)**
+## About
 Shopping Assistant is a chatbot, which can assist consumers in deciding the right product and bridge the gap between online and offline shopping. 
 
 ## Features
-- It will give some suggestions to the consumer depending upon his needs, just like a salesperson.
-- It will also provide a summary of all the reviews about that product, which will help the consumer to make a wise decision.
-- It also helps the consumer to virtually experience fashion products. E.g. If a consumer needs to try a cloth or a spectacle our shopping assistant gives    him real time experience of how that product would look on him/her.
+- Suggests products to the consumer depending upon his needs, just like a salesperson.
+- Helps the consumer to virtually experience fashion products. E.g. If a consumer needs to try a T-shirt or a spectacle our shopping assistant gives him real time experience of how that product would look on him/her.
+- Provides a summary of all the reviews about a product, which prevents users from doing the tedious job of going through hundreds of reviews of that product.
 
-## How to run locally?
+# Instructions for running locally
 
-### Running the API
+## Initial steps
+
+1. Clone the repository by using the below command:
+
+```
+git clone https://github.com/cjchirag7/shopping-assistant
+```
+
+2. Download the 4 model files from [here](https://drive.google.com/drive/folders/1nu6HFg_POr-wF24rAJEH-ZRCn7wtIpIo?usp=sharing) and copy them all to the directory `shopping-assistant/services/api/`. Please note that if you download the `model_files` folder in .zip format, then you need to extract all the files out of it and then copy them to the above directory. 
+
+## Method I (Using docker) [Recommended]
+### Pre-requisites
+
+1. Install `Docker` by looking up the
+   [docs](https://docs.docker.com/get-docker/)
+2. Install `Docker Compose` by looking up the
+   [docs](https://docs.docker.com/compose/install/)
+### Steps
+
+1. Make sure you are in the root of the project (i.e., `./shopping-assistant/`
+   folder).
+2. Run `docker-compose up` to spin up the containers.
+3. `web-app` would then be available locally at http://localhost:3000 , `server`
+   at http://localhost:8000 and the `API documentation` would be available at http://localhost:8000/redoc
+
+## Method II (Without docker)
+### Running the Server
 
 0. If you don't already have `pipenv` installed, install it using the following commands:
 ```
@@ -32,7 +71,7 @@ pipenv install
 3. In the activated virtual environment, run the following command to run the API:
 
 ```
-uvicorn main:app --reload
+uvicorn main:app
 ```
 
 4. The `server` would run at http://127.0.0.1:8000/ and the `API documentation` would be available at http://127.0.0.1:8000/docs
@@ -59,12 +98,31 @@ npm start
 ```
 
 4. The web app would start running at http://localhost:3000
+## Demo video
+
+- TODO
+## Screenshots
+
+- TODO
 
 ## Tech Stack
 
-### API
+### Server
 
 - [FastAPI](https://fastapi.tiangolo.com/#example)
+- [Pytorch](https://pytorch.org/)
+- [NLTK](https://www.nltk.org/)
 ### Web App
 
 - [React.js](https://reactjs.org/docs/getting-started.html)
+- [Jeeliz](https://github.com/jeeliz/jeelizGlassesVTOWidget)
+### Others
+
+- [Docker](https://www.docker.com/)
+
+## File structure
+
+- Presentation has been attached as `presentation.pptx` [TODO]
+- Training files have been attached as `training-files/`
+- Server code has been attached in `services/api/`
+- Frontend code has been attached in `services/web-app/`

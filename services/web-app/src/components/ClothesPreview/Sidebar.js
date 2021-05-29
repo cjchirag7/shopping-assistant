@@ -88,7 +88,7 @@ const Sidebar = ({
 
         {selectedProduct && <>
         <br/>
-        <img src={selectedProduct.src} style={{width: '150px'}}/>
+        <img src={selectedProduct.src} style={{width: '150px'}} alt='Loading'/>
         <Typography variant="h5" className={classes.title}>
         {selectedProduct.caption}
         </Typography>

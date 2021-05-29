@@ -8,3 +8,5 @@ services/api/output/second/TOM/val/*
 !services/api/output/second/TOM/val/.gitkeep 
 services/api/Database/val/person/*
 !services/api/Database/val/person/000249_0.jpg 
+services/api/chatbot/__pycache__
+services/api/recommender/__pycache__

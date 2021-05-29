@@ -5,14 +5,13 @@ import AppBar from "@material-ui/core/AppBar";
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Toolbar from "@material-ui/core/Toolbar";
-import TimelineIcon from '@material-ui/icons/Timeline';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import MenuIcon from "@material-ui/icons/Menu";
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import { Link, useLocation, useHistory } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 const useStyles = makeStyles(theme => ({
@@ -51,22 +50,13 @@ export default function Navbar({
   openTour
 }) {
   const navbarClasses = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const isMenuOpen = Boolean(anchorEl);
+
   const [uiAnchorEl, setUIAnchorEl] = React.useState(null);
   const isUIMenuOpen = Boolean(uiAnchorEl);
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
   const currentPath = useLocation().pathname;
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   
   let selectedUIOption = uiOptions.filter(({links}) => links.some(link => currentPath === link))[0]
   if(selectedUIOption) selectedUIOption = selectedUIOption.text;
-  
-  const routerHistory = useHistory();  
 
   return (
     <AppBar

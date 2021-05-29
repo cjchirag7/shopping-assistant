@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState, useRef } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import serverUrl from "../../Constants/serverUrl";
 import Content from "./Content";
 import Sidebar from "./Sidebar";
@@ -18,6 +18,7 @@ const ClothTryOn = (props) => {
     if(!matchedProduct.length)
       return;
     setSelectedProduct(matchedProduct[0]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   useEffect(() => {

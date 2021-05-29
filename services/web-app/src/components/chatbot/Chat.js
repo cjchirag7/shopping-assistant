@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {  Widget,  addResponseMessage,setQuickButtons, addUserMessage,renderCustomComponent, addLinkSnippet } from "react-chat-widget";
+import {  Widget,  addResponseMessage, renderCustomComponent, addLinkSnippet } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 import logo from "../../Images/avatar.jpeg";
 import serverUrl from "../../Constants/serverUrl";
@@ -144,11 +144,6 @@ class Chat extends Component {
           title="Shopping Assistant"
           subtitle="Ask anything related to any product"
           badge
-          handleQuickButtonClicked={
-            (value) => {
-              addUserMessage(value);
-            }
-          }
         />
       </div>
     );

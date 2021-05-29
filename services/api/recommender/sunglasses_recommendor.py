@@ -1,6 +1,6 @@
 import math
 import importlib
-mymodule = importlib.import_module("sunglasses_data")
+mymodule = importlib.import_module("recommender.sunglasses_data")
 
 def euclidean_similarity(person1, person2):
 
@@ -38,8 +38,6 @@ def recommend(person, bound,similarity=pearson_similarity):
 	scores.sort()
 	scores.reverse()
 	scores = scores[0:bound]
-
-	print (scores)
 
 	recomms = {}
 

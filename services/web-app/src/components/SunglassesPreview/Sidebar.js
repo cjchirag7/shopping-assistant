@@ -6,7 +6,6 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import InfoIcon from '@material-ui/icons/Info';
 import { makeStyles } from "@material-ui/core";
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import sunglassesData from '../../Constants/SunglassesData'

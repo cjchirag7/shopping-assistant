@@ -10,8 +10,8 @@ import sklearn
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
-from sunglasses_recommendor import recommend_sunglasses
-from clothes_recommendor import recommend_cloth
+from recommender.sunglasses_recommendor import recommend_sunglasses
+from recommender.clothes_recommendor import recommend_cloth
 
 nltk.download('punkt') 
 nltk.download('stopwords')
@@ -76,7 +76,6 @@ def match(user_response):
         return resp
     else:
         resp_json = qa_dict[idx]
-        print(resp_json)
         if(resp_json['type']=='suggestion'):
             if(resp_json['product']=='sunglasses'):
                 resp_json['preferred']=recommend_sunglasses()
@@ -91,16 +90,13 @@ def get_question(q):
   ques = "".join([char for char in ques if char not in string.punctuation]) 
   return ques
 
-qa_dict = json.loads(open("questions.json").read())
-print(qa_dict)
+qa_dict = json.loads(open("./chatbot/questions.json").read())
 
 q_list=list(map(get_question,qa_dict))
-print(q_list)
 
 def get_response(u_input):
   u_input = u_input.lower()
   u_input = "".join([char for char in u_input if char not in string.punctuation])  
-  print(u_input)
   response={}
   response=match(u_input)
   q_list.remove(u_input)

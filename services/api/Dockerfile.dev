@@ -1,0 +1,15 @@
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
+
+COPY ./requirements.txt /app
+
+RUN pip install cmake
+
+RUN pip install -r requirements.txt
+
+ENV SERVER_BASE_URL="http://localhost:8000/"
+
+RUN apt-get update
+RUN apt-get install -y libgl1-mesa-dev
+
+COPY ./Database/. /app/Database
+COPY ./output/. /app/output

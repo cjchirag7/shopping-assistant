@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState, useRef } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Content from "./Content";
 import Sidebar from "./Sidebar";
 import Navbar from "../Navbar";
@@ -21,6 +21,7 @@ const SunglassesTryOn = (props) => {
       return;
       console.log(productCode)
     setSelectedSunglasses(productCode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import ControlCameraIcon from '@material-ui/icons/ControlCamera';
-import { JEELIZVTO, JEELIZVTOWIDGET } from 'jeelizvtowidget'
+import { JEELIZVTOWIDGET } from 'jeelizvtowidget'
 import Button from '@material-ui/core/Button';
 import searchImage from '../../Images/avatar.jpeg'
 import MuiAlert from '@material-ui/lab/Alert';
