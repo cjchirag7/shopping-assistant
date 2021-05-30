@@ -104,7 +104,7 @@ npm start
 4. The web app would start running at http://localhost:3000
 ## Demo video
 
-- TODO
+- Available at [https://www.youtube.com/watch?v=x_BFtcoaTks](https://www.youtube.com/watch?v=x_BFtcoaTks)
 ## Screenshots
 
 ![Home Page](./screenshots/ss-1.png)
@@ -117,7 +117,8 @@ npm start
 ![Virtual trial step 3](./screenshots/ss-8.png)
 ![Another example of virtual trial](./screenshots/ss-9.png)
 ![Asking for a mobile phone with specific properties](./screenshots/ss-10.gif)
-![Summary of reviews](./screenshots/ss-11.png)
+![Virtual trial of sunglasses](./screenshots/ss-11.png)
+![Summary of reviews](./screenshots/ss-12.png)
 ## Tech Stack
 
 ### Server
@@ -135,7 +136,7 @@ npm start
 
 ## File structure
 
-- Presentation has been attached as `presentation.pptx` [TODO]
+- Presentation has been attached as `presentation.pdf`
 - Screenshots have been attached in `screenshots/`
 - Training files have been attached as `training-files/`
 - Server code has been attached in `services/api/`
