@@ -4,6 +4,7 @@ import "react-chat-widget/lib/styles.css";
 import logo from "../../Images/avatar.jpeg";
 import serverUrl from "../../Constants/serverUrl";
 import ProductCard from "./ProductCard";
+import SummaryCard from "./SummaryCard";
 import clothImages from '../../Constants/ClothImages'
 import sunglassesData from '../../Constants/SunglassesData'
 class Chat extends Component {
@@ -57,7 +58,8 @@ class Chat extends Component {
             addResponseMessage(response.payload);
           }
           else if(response.type === "summary") {
-            addResponseMessage(response.summary);
+            const props = {title: response.product, summary: response.summary}       
+            renderCustomComponent(SummaryCard,props);     
           }
           else if(response.type === "link") {
             addLinkSnippet(response.payload)
