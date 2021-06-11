@@ -105,5 +105,5 @@ def get_response(u_input):
   u_input = "".join([char for char in u_input if char not in string.punctuation])  
   response={}
   response=match(u_input)
-  q_list.remove(u_input)
+  q_list.pop()
   return response
